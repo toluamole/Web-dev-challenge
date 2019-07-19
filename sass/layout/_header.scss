@@ -1,0 +1,62 @@
+.header{
+   position: relative;
+  
+   &__image{
+     display: flex;
+     justify-content: center;
+    
+      &--1{
+         height: 45rem;
+         width: 60rem;
+         position: relative;
+         z-index: 999;
+      }
+
+      &::before{
+         content: "";
+         display: inline-block;
+         float: left;
+         position: absolute;
+         shape-outside: inset(25px round 75px);
+         clip-path: inset(25px round 75px);
+         background: #fff;
+         width: 70rem;
+         min-width: 70rem;
+         height: 129rem;
+         transform: rotate(65deg);
+         top: -15%;
+         left: 20%;
+         overflow:hidden;
+      }
+   }
+
+   
+
+   &__text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem;
+      position: relative;
+      z-index: 999;
+
+      &--primary{
+         font-size: 3rem;
+         font-weight: 700;
+         text-transform: capitalize; 
+         letter-spacing: 1px;
+          
+      }
+
+      &--secondary{
+        font-size: 2rem;
+        font-weight: 400;
+        color: $mid-greyish-blue;
+        padding: 2rem 32rem;
+        text-align: center;
+        line-height: 1.6;
+      }
+  }
+}
+
+

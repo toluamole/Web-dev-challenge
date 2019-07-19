@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.2%;
+  scroll-behavior: smooth; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-size: cover;
+  max-width: cover; }
+  body::before {
+    content: "";
+    display: inline-block;
+    float: right;
+    shape-outside: polygon(50% 0, 100% 100%, 0 100%);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    background: linear-gradient(to bottom right, #ff52bf, #9a52ff);
+    height: 55rem;
+    width: 112rem;
+    border-radius: 63px;
+    position: absolute;
+    bottom: 31%;
+    left: 45%;
+    transform: rotate(45deg);
+    z-index: 999; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f9fd;
+  max-width: cover;
+  min-height: 100vh; }
+
+body {
+  font-size: 1.8rem;
+  font-family: 'Poppins' sans-serif;
+  font-weight: 400; }
+
+.btn {
+  position: relative;
+  transition: all .1s ease-in-out;
+  outline: none;
+  cursor: pointer; }
+  .btn, .btn:visited, .btn:link {
+    margin-right: 3.5rem;
+    height: 1.5rem;
+    width: 15rem; }
+  .btn--text {
+    text-decoration: none; }
+    .btn--text-tertiary {
+      color: #fff;
+      text-decoration: none; }
+  .btn--white {
+    color: #00252e;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #f7f9fd;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    border: #f7f9fd;
+    z-index: 999; }
+    .btn--white:hover {
+      transform: scale(1.03);
+      text-decoration: underline;
+      color: #fff; }
+  .btn--red {
+    text-transform: capitalize;
+    text-align: center;
+    width: 20rem;
+    background-color: #ff52bf;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 7rem auto;
+    border: #9a52ff;
+    border-radius: 3px; }
+    .btn--red:hover {
+      transform: scale(1.03); }
+
+.cta {
+  display: flex;
+  justify-content: center; }
+  .cta__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 55rem;
+    height: 25rem;
+    background: white;
+    margin: 10rem;
+    border: 1px solid #f7f9fd;
+    border-radius: 5px;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2); }
+    .cta__box--paragraph {
+      color: #808d99;
+      margin-bottom: 2rem; }
+
+.about {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18rem; }
+  .about__image--img {
+    width: 50rem;
+    height: 40rem;
+    margin: 12rem; }
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10rem 3rem;
+    text-align: justify;
+    margin-right: 8rem; }
+    .about__text--heading {
+      font-size: 2rem;
+      color: #00252e;
+      margin-bottom: 2rem;
+      text-transform: capitalize;
+      font-weight: 700; }
+    .about__text .paragraph {
+      color: #808d99;
+      font-weight: 400;
+      line-height: 1.8;
+      margin-bottom: 1.5rem; }
+
+.footer {
+  background-color: #00252e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30rem; }
+  .footer__logo {
+    display: flex;
+    flex-direction: column; }
+    .footer__logo--box {
+      width: 20rem; }
+  .footer__icon {
+    margin: 1.3rem 1.3rem; }
+    .footer__icon .fab {
+      font-size: 2rem;
+      color: #fff;
+      margin-right: 1rem; }
+  .footer__copyright {
+    color: #fff;
+    font-size: 1.3rem; }
+  .footer__menu {
+    display: flex;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    font-weight: 100;
+    color: #fff;
+    cursor: pointer; }
+    .footer__menu--1 {
+      list-style: none;
+      margin-right: 5rem; }
+    .footer__menu--2 {
+      list-style: none; }
+  .footer__cta {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    color: #fff; }
+    .footer__cta--heading {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 1.5rem; }
+    .footer__cta--paragraph {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      letter-spacing: 1;
+      width: 30rem;
+      margin-bottom: 1.5rem; }
+  .footer--input {
+    border: none;
+    border-radius: 5px;
+    width: 25rem;
+    height: 4rem;
+    outline: none;
+    margin-bottom: 1.3rem; }
+  .footer--btn {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 10rem;
+    border: none;
+    border-radius: 2px;
+    width: 12rem;
+    height: 3.5rem;
+    background: #ff52bf;
+    color: #fff; }
+    .footer--btn:hover {
+      transform: scale(1.03); }
+
+.header {
+  position: relative; }
+  .header__image {
+    display: flex;
+    justify-content: center; }
+    .header__image--1 {
+      height: 45rem;
+      width: 60rem;
+      position: relative;
+      z-index: 999; }
+    .header__image::before {
+      content: "";
+      display: inline-block;
+      float: left;
+      position: absolute;
+      shape-outside: inset(25px round 75px);
+      clip-path: inset(25px round 75px);
+      background: #fff;
+      width: 70rem;
+      min-width: 70rem;
+      height: 129rem;
+      transform: rotate(65deg);
+      top: -15%;
+      left: 20%;
+      overflow: hidden; }
+  .header__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    position: relative;
+    z-index: 999; }
+    .header__text--primary {
+      font-size: 3rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      letter-spacing: 1px; }
+    .header__text--secondary {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #808d99;
+      padding: 2rem 32rem;
+      text-align: center;
+      line-height: 1.6; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem; }
+  .navigation__logo-box {
+    z-index: 999; }
+  .navigation__logo {
+    height: 2.25rem;
+    margin-left: 3.5rem; }

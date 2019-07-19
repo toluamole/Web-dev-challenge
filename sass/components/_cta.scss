@@ -1,0 +1,27 @@
+.cta{
+   display: flex;
+   justify-content: center;
+   
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 55rem;
+        height: 25rem;
+        background: white;
+        margin: 10rem;
+        border: 1px solid $light-greyish-blue;
+        border-radius: 5px;
+        box-shadow: 0 1rem 1.5rem rgba(black, .2); 
+
+        &--paragraph{
+            color: $mid-greyish-blue;
+            margin-bottom: 2rem;
+        }
+    }
+    
+    
+}

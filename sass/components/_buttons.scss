@@ -1,0 +1,62 @@
+.btn{
+    position: relative;
+    transition: all .1s ease-in-out;
+    outline: none;
+    cursor: pointer;
+    &,
+    &:visited,
+    &:link{
+        margin-right: 3.5rem;
+        height:1.5rem;
+        width: 15rem;
+    }
+    
+    &--text{
+        text-decoration: none;
+        
+        &-tertiary{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+   
+    
+    &--white {
+        color: $very-dark-cyan;
+        text-transform: capitalize;
+        text-align: center;
+        background-color: $light-greyish-blue;
+        box-shadow: 0 1rem 2rem rgba(black, .4);
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;     
+        border: $light-greyish-blue;
+        z-index: 999;
+        
+
+        &:hover{
+            transform: scale(1.03);
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
+
+    &--red {
+        text-transform: capitalize;
+        text-align: center;
+        width: 20rem;
+        background-color: $primary-pink;
+        box-shadow: 0 1rem 1.5rem rgba(black, .1);
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 7rem auto;
+        border:$secondary-violet;
+        border-radius: 3px;
+        
+
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+
+
+}

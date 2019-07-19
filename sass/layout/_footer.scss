@@ -1,0 +1,100 @@
+.footer {
+   background-color: $very-dark-cyan;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 30rem;
+
+   &__logo {
+       display: flex;
+       flex-direction: column;
+        &--box {
+            width: 20rem;      
+        }
+    }
+
+   &__icon {
+     margin: 1.3rem 1.3rem;
+        .fab {
+            font-size: 2rem;
+            color: #fff;
+            margin-right: 1rem;
+        }
+    
+   }
+
+   &__copyright {
+      color: #fff;
+      font-size: 1.3rem;
+   }
+
+   &__menu {
+       display: flex;
+       font-size: 1.3rem;
+       line-height:3rem;
+       font-weight: 100;
+       color: #fff;
+        cursor: pointer;
+        
+        &--1{
+         list-style: $list-style;
+         margin-right: 5rem;
+         
+        }
+
+        &--2{
+         list-style: $list-style;
+           
+        }
+   }
+
+   &__cta {
+       display: flex;
+       flex-direction: column;
+       width: 35rem;
+       color: #fff;
+
+       &--heading {
+           text-transform: uppercase;
+           font-weight: 600;
+           font-size:2rem;
+           margin-bottom: 1.5rem;
+       }
+
+       &--paragraph {
+           font-size: 1.3rem;
+           line-height:2rem;
+           letter-spacing: 1;
+           width: 30rem;
+           margin-bottom: 1.5rem;      
+       }
+   }
+
+   &--input {
+       border: none;
+       border-radius: 5px;
+       width: 25rem;
+       height: 4rem;
+       outline: none;
+       margin-bottom: 1.3rem;
+   }
+
+   &--btn {
+       display: flex;
+       justify-content: center;
+       margin-left: auto;
+       margin-right: 10rem;
+       border:none;
+       border-radius: 2px;
+       width: 12rem;
+       height: 3.5rem;
+       background:$primary-pink;
+       color: #fff;
+
+       &:hover{
+          transform: scale(1.03);
+       }
+    }
+
+
+}

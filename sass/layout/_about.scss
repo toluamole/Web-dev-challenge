@@ -1,0 +1,41 @@
+.about{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 18rem;
+    
+    &__image{
+      
+        &--img{
+            width: 50rem;
+            height: 40rem;
+            margin: 12rem;
+        }
+        
+    }
+
+    &__text{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       padding: 10rem 3rem;      
+       text-align: justify;
+       margin-right:8rem;
+
+       &--heading {
+           font-size: 2rem;
+           color: $very-dark-cyan;
+           margin-bottom: 2rem;
+           text-transform: capitalize;
+           font-weight: 700;
+       }
+
+       .paragraph {
+           color: $mid-greyish-blue;
+           font-weight: 400;
+           line-height: 1.8;
+           margin-bottom: 1.5rem;
+       }
+    }
+    
+}
